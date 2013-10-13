@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{f4802a8c-5cb0-429c-ae11-a1fae939a8f1}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="GlobalInterfaces">
+      <UniqueIdentifier>{d5867651-1c88-4056-9b20-c81b36d508e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{54a96a3b-d281-49ab-9938-b5c934f15b8c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\DigitalDemodulator2Filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DigitalDemodulatorFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DiseqCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FrequencyFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LnbInfoFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\NetworkProvider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\OutputPin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\NetworkProvider.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\DigitalDemodulator2Filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DigitalDemodulatorFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DiseqCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FrequencyFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LnbInfoFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\NetworkProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\OutputPin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\CommonInterfaceTypes.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\DiseqCTypes.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\IGTvLibCommonInterface.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\IGTvLibDiseqC.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\IGTvLibHwPidFiltering.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\IGTvLibLogging.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\IGTvLibSource.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\IGTvLibTuning.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\LoggingTypes.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\TuningTypes.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

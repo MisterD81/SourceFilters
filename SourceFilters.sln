@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{77DADD25-F6C0-4482-B900-A5721AA3D6B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeviceSource", "DeviceSource", "{D00DA469-AB51-4F87-973F-DC057648659B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetworkProvider", "NetworkProvider\NetworkProvider.vcxproj", "{DF7EC7C5-557C-4A19-AD7D-C1E9A63C3911}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "log4cplus_static", "Log4CPlus\msvc8\log4cplus_static.vcxproj", "{BEC0CD2F-60CD-40E2-A89B-AB10E902F1D5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TongshiDVBSource", "TongshiDVBSource\TongshiDVBSource.vcxproj", "{C77CACAA-B427-4E33-BE2C-A064FF556243}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TTPremiumSource", "TTPremiumSource\TTPremiumSource.vcxproj", "{DB23A165-5801-40CE-990A-29CFD3945C5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_MultiByte|Standard = Debug_MultiByte|Standard
+		Debug|Standard = Debug|Standard
+		Release_MultiByte|Standard = Release_MultiByte|Standard
+		Release|Standard = Release|Standard
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF7EC7C5-557C-4A19-AD7D-C1E9A63C3911}.Debug_MultiByte|Standard.ActiveCfg = Debug|Win32
+		{DF7EC7C5-557C-4A19-AD7D-C1E9A63C3911}.Debug|Standard.ActiveCfg = Debug|Win32
+		{DF7EC7C5-557C-4A19-AD7D-C1E9A63C3911}.Debug|Standard.Build.0 = Debug|Win32
+		{DF7EC7C5-557C-4A19-AD7D-C1E9A63C3911}.Release_MultiByte|Standard.ActiveCfg = Release|Win32
+		{DF7EC7C5-557C-4A19-AD7D-C1E9A63C3911}.Release|Standard.ActiveCfg = Release|Win32
+		{DF7EC7C5-557C-4A19-AD7D-C1E9A63C3911}.Release|Standard.Build.0 = Release|Win32
+		{BEC0CD2F-60CD-40E2-A89B-AB10E902F1D5}.Debug_MultiByte|Standard.ActiveCfg = Debug_MultiByte|Win32
+		{BEC0CD2F-60CD-40E2-A89B-AB10E902F1D5}.Debug_MultiByte|Standard.Build.0 = Debug_MultiByte|Win32
+		{BEC0CD2F-60CD-40E2-A89B-AB10E902F1D5}.Debug|Standard.ActiveCfg = Debug|Win32
+		{BEC0CD2F-60CD-40E2-A89B-AB10E902F1D5}.Debug|Standard.Build.0 = Debug|Win32
+		{BEC0CD2F-60CD-40E2-A89B-AB10E902F1D5}.Release_MultiByte|Standard.ActiveCfg = Release_MultiByte|Win32
+		{BEC0CD2F-60CD-40E2-A89B-AB10E902F1D5}.Release_MultiByte|Standard.Build.0 = Release_MultiByte|Win32
+		{BEC0CD2F-60CD-40E2-A89B-AB10E902F1D5}.Release|Standard.ActiveCfg = Release|Win32
+		{BEC0CD2F-60CD-40E2-A89B-AB10E902F1D5}.Release|Standard.Build.0 = Release|Win32
+		{C77CACAA-B427-4E33-BE2C-A064FF556243}.Debug_MultiByte|Standard.ActiveCfg = Debug|Win32
+		{C77CACAA-B427-4E33-BE2C-A064FF556243}.Debug|Standard.ActiveCfg = Debug|Win32
+		{C77CACAA-B427-4E33-BE2C-A064FF556243}.Debug|Standard.Build.0 = Debug|Win32
+		{C77CACAA-B427-4E33-BE2C-A064FF556243}.Release_MultiByte|Standard.ActiveCfg = Release|Win32
+		{C77CACAA-B427-4E33-BE2C-A064FF556243}.Release|Standard.ActiveCfg = Release|Win32
+		{C77CACAA-B427-4E33-BE2C-A064FF556243}.Release|Standard.Build.0 = Release|Win32
+		{DB23A165-5801-40CE-990A-29CFD3945C5F}.Debug_MultiByte|Standard.ActiveCfg = Debug|Win32
+		{DB23A165-5801-40CE-990A-29CFD3945C5F}.Debug_MultiByte|Standard.Build.0 = Debug|Win32
+		{DB23A165-5801-40CE-990A-29CFD3945C5F}.Debug|Standard.ActiveCfg = Debug|Win32
+		{DB23A165-5801-40CE-990A-29CFD3945C5F}.Debug|Standard.Build.0 = Debug|Win32
+		{DB23A165-5801-40CE-990A-29CFD3945C5F}.Release_MultiByte|Standard.ActiveCfg = Release|Win32
+		{DB23A165-5801-40CE-990A-29CFD3945C5F}.Release_MultiByte|Standard.Build.0 = Release|Win32
+		{DB23A165-5801-40CE-990A-29CFD3945C5F}.Release|Standard.ActiveCfg = Release|Win32
+		{DB23A165-5801-40CE-990A-29CFD3945C5F}.Release|Standard.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BEC0CD2F-60CD-40E2-A89B-AB10E902F1D5} = {77DADD25-F6C0-4482-B900-A5721AA3D6B8}
+		{DF7EC7C5-557C-4A19-AD7D-C1E9A63C3911} = {D00DA469-AB51-4F87-973F-DC057648659B}
+		{C77CACAA-B427-4E33-BE2C-A064FF556243} = {D00DA469-AB51-4F87-973F-DC057648659B}
+		{DB23A165-5801-40CE-990A-29CFD3945C5F} = {D00DA469-AB51-4F87-973F-DC057648659B}
+	EndGlobalSection
+EndGlobal

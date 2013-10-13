@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DB23A165-5801-40CE-990A-29CFD3945C5F}</ProjectGuid>
+    <RootNamespace>TTPremiumSource</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>Windows7.1SDK</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>Windows7.1SDK</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>bin\Debug\</OutDir>
+    <IntDir>.\obj\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <TargetExt>.ax</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>bin\Release\</OutDir>
+    <IntDir>.\obj\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+    <TargetExt>.ax</TargetExt>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Message>Build Log4CPLUS</Message>
+      <Command>"$(DevEnvDir)devenv.com" "$(SolutionPath)" /Build "Debug_MultiByte" /project "log4cplus_static"</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Command />
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(DSHOW_BASE);$(WINDOWS_SDK)Include\;$(DXSDK_DIR)Include;..\Log4CPlus\include;.\SDK\include\;..\shared\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;DBG=1;DEBUG;_DEBUG;_CRT_SECURE_NO_WARNINGS;LOG4CPLUS_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\obj\Debug/TTPremiumSource.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\obj\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\obj\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\bin\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>strmbasd.lib;msvcrt.lib;winmm.lib;ws2_32.lib;.\SDK\lib\ttdvbacc.lib;log4cplusSD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>bin\Debug/TTPremiumSource.ax</OutputFile>
+      <AdditionalLibraryDirectories>$(DSHOW_BASE)Debug;$(DXSDK_DIR)lib\x86;$(WINDOWS_SDK)\lib;..\Log4CPlus\msvc8\log4cplus_static.Debug_MultiByte;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\source\TTPremiumSource.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\bin\Debug/TTPremiumSource.pdb</ProgramDatabaseFile>
+      <SubSystem>NotSet</SubSystem>
+      <StackReserveSize>2097152</StackReserveSize>
+      <StackCommitSize>2097152</StackCommitSize>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(TargetDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Message>Build Log4CPLUS</Message>
+      <Command>"$(DevEnvDir)devenv.exe" "$(SolutionPath)" /Build "Release_MultiByte" /project "log4cplus_static"</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Command />
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(DSHOW_BASE);$(WINDOWS_SDK)Include\;$(DXSDK_DIR)Include;..\Log4CPlus\include;.\SDK\include\;..\shared\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;LOG4CPLUS_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\obj\Release/TTPremiumSource.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\obj\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\obj\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\bin\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>strmbase.lib;msvcrt.lib;winmm.lib;ws2_32.lib;.\SDK\lib\ttdvbacc.lib;log4cplusS.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>bin\Release/TTPremiumSource.ax</OutputFile>
+      <AdditionalLibraryDirectories>$(DSHOW_BASE)Release;$(DXSDK_DIR)lib\x86;$(WINDOWS_SDK)\lib;..\Log4CPlus\msvc8\log4cplus_static.Release_MultiByte;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\source\TTPremiumSource.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\bin\Release/TTPremiumSource.pdb</ProgramDatabaseFile>
+      <SubSystem>NotSet</SubSystem>
+      <StackReserveSize>2097152</StackReserveSize>
+      <StackCommitSize>2097152</StackCommitSize>
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\CommonInterfaceControl.cpp" />
+    <ClCompile Include="source\CTTPremiumSource.cpp" />
+    <ClCompile Include="source\CTTPremiumSourceStream.cpp" />
+    <ClCompile Include="source\stdafx.cpp" />
+    <ClCompile Include="source\TSDataFilter.cpp" />
+    <ClCompile Include="source\TTPremiumControl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\TTPremiumSource.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\CommonInterfaceControl.h" />
+    <ClInclude Include="source\CTTPremiumSource.h" />
+    <ClInclude Include="source\CTTPremiumSourceStream.h" />
+    <ClInclude Include="source\stdafx.h" />
+    <ClInclude Include="source\TSDataFilter.h" />
+    <ClInclude Include="source\TTPremiumControl.h" />
+    <ClInclude Include="SDK\Include\CiDataIF.h" />
+    <ClInclude Include="SDK\Include\ddraw.h" />
+    <ClInclude Include="SDK\Include\DVBAVCtrl.h" />
+    <ClInclude Include="SDK\Include\DVBBoardControl.h" />
+    <ClInclude Include="SDK\Include\DVBCommon.h" />
+    <ClInclude Include="SDK\Include\DVBComnIF.h" />
+    <ClInclude Include="SDK\Include\DVBDLLInit.h" />
+    <ClInclude Include="SDK\Include\DVBFilterToFile.h" />
+    <ClInclude Include="SDK\Include\DVBFrontend.h" />
+    <ClInclude Include="SDK\Include\DVBOsd.h" />
+    <ClInclude Include="SDK\Include\DVBPSI.h" />
+    <ClInclude Include="SDK\Include\DVBRecPlay.h" />
+    <ClInclude Include="SDK\Include\DVBRecPlayFile.h" />
+    <ClInclude Include="SDK\Include\DVBRecPlayPES.h" />
+    <ClInclude Include="SDK\Include\DVBRemoteControl.h" />
+    <ClInclude Include="SDK\Include\DVBTeletext.h" />
+    <ClInclude Include="SDK\Include\DVBTSFilter.h" />
+    <ClInclude Include="SDK\Include\DVBVideoDisplay.h" />
+    <ClInclude Include="SDK\Include\USBRemoteControl.h" />
+    <ClInclude Include="..\shared\source\CommonInterfaceTypes.h" />
+    <ClInclude Include="..\shared\source\DiseqCTypes.h" />
+    <ClInclude Include="..\shared\source\IGTvLibCommonInterface.h" />
+    <ClInclude Include="..\shared\source\IGTvLibDiseqC.h" />
+    <ClInclude Include="..\shared\source\IGTvLibHwPidFiltering.h" />
+    <ClInclude Include="..\shared\source\IGTvLibLogging.h" />
+    <ClInclude Include="..\shared\source\IGTvLibSource.h" />
+    <ClInclude Include="..\shared\source\IGTvLibTuning.h" />
+    <ClInclude Include="..\shared\source\LoggingTypes.h" />
+    <ClInclude Include="..\shared\source\TuningTypes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Log4CPlus\msvc8\log4cplus_static.vcxproj">
+      <Project>{bec0cd2f-60cd-40e2-a89b-ab10e902f1d5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{4e7dce9b-b801-4dd1-bbb7-1261d233de82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GlobalInterfaces">
+      <UniqueIdentifier>{1690f64d-ce24-414b-b805-835e0ddc8451}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\CommonInterfaceControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CTTPremiumSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CTTPremiumSourceStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TSDataFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TTPremiumControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\TTPremiumSource.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\CommonInterfaceControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CTTPremiumSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CTTPremiumSourceStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\TSDataFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\TTPremiumControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\CiDataIF.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\ddraw.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\DVBAVCtrl.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\DVBBoardControl.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\DVBCommon.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\DVBComnIF.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\DVBDLLInit.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\DVBFilterToFile.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\DVBFrontend.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\DVBOsd.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\DVBPSI.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\DVBRecPlay.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\DVBRecPlayFile.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\DVBRecPlayPES.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\DVBRemoteControl.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\DVBTeletext.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\DVBTSFilter.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\DVBVideoDisplay.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Include\USBRemoteControl.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\CommonInterfaceTypes.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\DiseqCTypes.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\IGTvLibCommonInterface.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\IGTvLibDiseqC.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\IGTvLibHwPidFiltering.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\IGTvLibLogging.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\IGTvLibSource.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\IGTvLibTuning.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\LoggingTypes.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\source\TuningTypes.h">
+      <Filter>GlobalInterfaces</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

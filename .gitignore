@@ -1,0 +1,16 @@
+
+obj
+bin
+*.user
+/_ReSharper.SourceFilters
+/Log4CPlus/msvc8/log4cplus_static.Debug
+/Log4CPlus/msvc8/log4cplus_static.Debug_MultiByte
+/Log4CPlus/msvc8/log4cplus_static.Release
+/Log4CPlus/msvc8/log4cplus_static.Release_MultiByte
+/SourceFilters.v11.suo
+/SourceFilters.suo
+/SourceFilters.sdf
+/SourceFilters.1.2.dotCover
+/SourceFilters.6.1.ReSharper.user
+/TTPremiumSource/SDK
+/SourceFilters.ncb
